@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>4Cars - Aluguel de carros</title>
+</head>
+<body>
+    <header>
+        <a href="#inicio"><div class="logo-inicio">
+            <img src="fotos\4car.png" alt="Logo - desenho de um carro laranja '4Cars' slogan:'Nosso carro sua chance.'">
+        </div></a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#carros">Carros</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
+                <li><a href="#trabalhe-conosco">Trabalhe conosco</a></li>
+            </ul>
+        </nav>
+        <input type="button" value="Login" onclick="mudarBotao(event)">
+        
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="chamada">
+                <h1>Faça sua reserva aqui:</h1>
+                <form action="#" method="post" class="localizar-carros">
+                    
+                    <label for="cidade"></label>
+                    <input type="search" name="cidade" placeholder="Digite o local de retirada">
+
+                    <label for="data-retirada"></label>
+                    <input type="date" name="data-retirada" id="data-retirada">
+
+                    <label for="hora"></label>
+                    <input type="hour" name="hora" placeholder="Digite a hora...">
+                    
+                </form>
+            </div>
+            <section class="slogan">
+                <img src="fotos/carros-branco.png" alt="imagem de carros enfileirados e logo for4s">
+                
+                <div class="frase">
+                    <h2>
+                        Aqui você encontra conforto, qualidade e desconto!
+                    </h2>
+                    <span>Dirija por aí sem pensar em despesas, saia da 4Cars com o </span><span id="tanque"> TANQUE CHEIO </span><span>sem alteração no valor</span>
+                    <a href="#carros"><button onclick="botao">Confira aqui!</button></a>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="quem-somos">
+            <h1> Somos uma empresa especializada em aluguel de carros. Nosso maior objetivo é oferecer um serviço acessível
+                e de qualidade, garantindo a melhor experiência para você!
+            </h1>
+
+            <div>
+                <img src="fotos/logo-carro-laranja.png" alt="logo de carro preto">
+
+                <ul id="lista-icones">
+                    <li>
+                        <img src="fotos/iconecelular.png" alt="ícone de um celular" >
+                        <div>
+                            <h2>Totalmente digital &#128241</h2>
+                            <p>Você consegue alugar o seu carro de preferência através da nossa plataforma digital.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="fotos/semburocracia.png" alt="sem papel">
+                        <div>
+                            <h2>Sem burocracia &#128220</h2>
+                            <p>Pagamentos através do cartão de crédito, boleto bancário ou PIX.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="fotos/dinheiro.jpg" alt="valor baixo">
+                        <div>
+                            <h2>Sem taxas abusivas &#128184</h2>
+                            <p>Sem aprovação de crédito e cobrimos o menor preço do mercado.</p>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+
+        </section>
+
+        <section id="carros">
+            <div class="titulo-plano">
+                <h1>
+                    Na 4cars existe um plano feito pra você! <br> Conheça agora mesmo:
+                </h1>
+            </div>
+
+            <nav class="nav-planos">
+                <div class="div-planos">
+                    <img class="card-plano" src="./fotos/carro-popular.jpg" alt="imagem carro popular">
+                    <h3>Grupo popular</h3>
+                    <p>Veículos similares: Fiat Argo 1.0, GM Onix LT 1.0 e VW Polo 1.0 </p>
+                </div>
+
+                <div class="div-planos">
+                    <img class="card-plano" src="./fotos/carro-luxo.jpg" alt="imagem carro de luxo">
+                    <h3>Grupo de luxo</h3>
+                    <p>Veículos similares: Mercedes AMG GT 63 SE e BMW 320i </p>
+                </div>
+            </nav>
+            <br>
+            
+        </section>
+
+        <section id="fale-conosco">
+            <div class="pesquisa">
+                <h2 class="h2-background">Atendimento 4Cars</h2>
+                <br>
+                <p><strong>Como nós podemos te ajudar?</strong></p>
+                <p>Use o campo de busca para nos perguntar</p>
+                <form>
+                    <input class="input" type="text" class="input-padrao" placeholder="Faça sua busca aqui :)">
+                    <input class="botao" type="submit" value="Enviar">
+                </form>
+            </div>
+            <h2 id="perguntas">A sua dúvida pode ter sido a dúvida de outra pessoa, confira abaixo:</h2>
+            <div class="container">
+                <div class="card">
+                    <input class="input-2" type="checkbox" id="card1">
+                    <label class="subtitulo" for="card1">O que é necessário para alugar um carro da 4cars </label>
+                    <div class="esconde">
+                        <p>Idade mínima de 18 anos, mediante inclusão de adicional Condutor Jovem para condutores até 20 anos;
+                            Tempo de CNH: sem tempo mínimo. Habilitações provisórias e definitivas são válidas;
+                            Sujeito à aprovação de crédito;.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <input class="input-2" type="checkbox" id="card2">
+                    <label class="subtitulo" for="card2">Qual o valor da franquia? </label>
+                    <div class="esconde">
+                        <p>Em caso de <strong>acidentes</strong> é cobrado R$1.600 para reparar o dano causado. Se houver terceiros envolvidos
+                        será cobrado R$1.600 para cada veículo envolvido. Caso ocorra <strong>roubo</strong> se for avisado em até 6 horas após o ocorrido 
+                        será cobrado o valor de R$1.600, se ultrapassar esse tempo, será cobrado R$6.000.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <input class="input-2" type="checkbox" id="card3">
+                    <label class="subtitulo" for="card3">Quais são as formas de pagamento disponíveis para alugar um carro? </label>
+                    <div class="esconde">
+                        <p>Você pode pagar
+                            • Locação de até 30 dias como pessoa física – à vista ou parcelado em até 6x sem juros nos cartões de crédito American Express, Visa, Mastercard, Diners Club International e Elo, emitidos no Brasil.
+                            Não são aceitos cartões Corporate/Empresarial e cartões pré-pagos.
+                           • Locação acima de 30 dias como pessoa física – para locações mensais consulte aqui as condições.
+                           • Locação como pessoa jurídica pode ser à vista, parcelado no cartão de crédito ou faturado conforme condições contratuais.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <input class="input-2" type="checkbox" id="card4">
+                    <label class="subtitulo" for="card4">Ao alugar um carro, é necessária uma pré-autorização. O que é isso? </label>
+                    <div class="esconde">
+                        <p>É uma reserva de valor no seu cartão de crédito, necessária por questão de segurança. Trata-se de uma estimativa de possíveis despesas em casos de imprevistos na locação, ok?
+                            Ao final da locação, se não houver débitos pendentes, solicitamos ao seu banco o desbloqueio do valor retido e o seu limite é reestabelecido no prazo da sua operadora de cartão de crédito e/ou banco emissor.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <input class="input-2" type="checkbox" id="card5">
+                    <label class="subtitulo" for="card5">Como solicito veículo reserva? </label>
+                    <div class="esconde">
+                        <p>Caso seu veículo fique parado por mais de 48 horas após o envio da documentação, você ja tem direito a um carro reserva.
+                            É só entrar em contato conosco e retirar o veículo reserva caso necessite.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <input class="input-2" type="checkbox" id="card6">
+                    <label class="subtitulo" for="card6">Como faço para mudar de plano? </label>
+                    <div class="esconde">
+                        <p>Basta entrar em contaco com a 4Cars, informar o plano desejado e realizar o pagamento da diferença entre planos.
+                            Case migre para um plano mais barato, você terá desconto no pagamento da próxima fatura ou bônus para o aluguel do
+                            próximo veículo que você alugar.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <input class="input-2" type="checkbox" id="card7">
+                    <label class="subtitulo" for="card7">O que preciso para retirar o carro? </label>
+                    <div class="esconde">
+                        <p>Para garantir sua reserva, pedimos para que você pague a entrada, o valor do aluguel fica a seu critério,
+                            via cartão de crédito. Ai é só passar na agência de sua preferência e retirar seu 4Cars.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trabalhe-conosco">
+            <h1> Venha fazer parte de uma empresa que está mudando a direção de milhares de pessoas!  </h1>
+            <h2> A 4car quer transformar vidas unindo mobilidade, tecnologia e excelência!  </h2>
+            <h3> Confira as nossas oportunidades:</h3>
+            <h4> &#10024 Vagas 100% remotas &#10024</h4>
+            
+            <div>
+                <ul>
+                    <a href="https://www.vagas.com.br/" target="_blank"><li> Analista de Melhoria Contínua</li></a>
+                    <a href="https://www.vagas.com.br/" target="_blank"><li> Desenvolvedor Front-End Jr.</li></a>
+                    <a href="https://www.vagas.com.br/" target="_blank"><li> Desenvolvedor Back-End Sr.</li></a>
+                    <a href="https://www.vagas.com.br/" target="_blank"><li> Analista Tributário</li></a>
+                   
+                    
+                </ul>
+            </div>
+            <h4>A gente te conta como é fazer parte da família 4Cars &#10084</h4>
+            <div id="depoimentos">
+                <section> 
+                    <img src="fotos/fabricio.jpg" alt="Foto de perfil do Fabrício">
+                    <p class="nome"><b>Fabrício Croscatto</b></p>
+                    <p class="cargo"><i>CEO</i></p>
+                    <p class="depoimento">"A 4Cars foi uma empresa que me acolheu com muito carinho! É um lugar que gosto de trabalhar e espero contribuir cada dia mais pelo seu crescimento."</p>
+                </section>
+                <section> 
+                    <img src="fotos/joao-pedro.jpg" alt="Foto de perfil do João">
+                    <p class="nome"><b>João Pedro Croscatto</b></p>
+                    <p class="cargo"><i>Gerente de redes Sociais</i></p>
+                    <p class="depoimento">"Trabalhar em uma empresa que incentiva sua criatividade e apoia você a buscar novas idéias é gratificante!."</p>
+                </section>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-fim">
+            <a href="#inicio"><img src="fotos/4car-semfundo.png" alt="Logo - desenho de um carro laranja '4Cars' slogan:'Nosso carro sua chance.'"></a>
+        </div>
+  
+        <div class="box">
+            <form action="#">
+                <fieldset>
+                    <legend>Fale conosco</legend>
+                    <div class="input-box">
+                        <input type="text" name="nome" id="nome-user" placeholder="Nome completo">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" id="email-user" placeholder="Email">
+                        
+                    </div>
+                    <div class="input-box">
+                        <textarea name="assunto" id="assunto-user" placeholder="Assunto" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Enviar" onclick = "capturarDados(event)">
+                </fieldset>
+            </form>
+        </div>
+        
+
+    </footer>
+</body>
+</html>
